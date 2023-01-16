@@ -1,0 +1,160 @@
+:root {
+    /** Colors **/
+    --color-neutral-10: #0d1117;
+    --color-neutral-20: #161b22;
+    --color-neutral-30: #21262d;
+    --color-neutral-40: #30363d;
+    --color-neutral-50: #8b949e;
+    --color-neutral-60: #c9d1d9;
+    --color-neutral-70: #ffffff;
+
+    --color-link: #58a6ff;
+    
+    --color-button: #238636;
+    --color-button-hover: #2ea043;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;    
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--color-neutral-10);
+    color: var(--color-neutral-60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 32px 0px 24px 0px;
+}
+
+#logo {
+    width: 48px;
+    height: 46px;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--color-neutral-20);
+    border-radius: 6px;
+    padding: 16px;
+    border: 1px solid var(--color-neutral-30);
+}
+
+.input-field  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-field div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field label {
+    font-weight: 400;
+}
+
+#forgot_password:hover {
+    text-decoration: none;
+}
+
+.form-control {
+    all: unset;
+    padding: 5px 12px;
+    line-height: 20px;
+    color: var(--color-neutral-60);
+    vertical-align: middle;
+    background-color: var(--color-neutral-10);
+    border: 1px solid var(--color-neutral-40);
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.form-control:focus-visible, .form-select:focus-visible {
+    border-color: var(--color-link);
+    outline: none;
+}
+
+#submit_button {
+    background-color: var(--color-button);
+    color: var(--color-neutral-70);
+    border: 1px solid rgba(240,246,252,0.1);
+    display: inline-block;
+    padding: 5px 16px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 80ms;
+}
+
+#submit_button:hover {
+    background-color: var(--color-button-hover);
+}
+
+#login_callout {
+    padding: 16px 44px;
+    text-align: center;
+    border: 1px solid var(--color-neutral-40);
+    border-radius: 6px;
+}
+
+#login_callout a {
+    font-size: 14px;
+}
+
+.form-control:-webkit-autofill {
+    box-shadow: inset 0 0 0 32px var(--color-neutral-10) !important;
+    -webkit-text-fill-color:var(--color-neutral-60);
+}
+
+footer {
+    padding: 80px;
+}
+
+footer ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+footer ul li:last-child a {
+    color: var(--color-neutral-50);
+}
+
+footer ul li:last-child a:hover {
+    color: var(--color-link);
+}
